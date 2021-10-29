@@ -47,9 +47,10 @@ describe('MovieService', () => {
 
   it('should return expected movie (HttpClient called once)', (done: DoneFn) => {
     const movieEto = mockMovieEto;
+    const movieResponse = { results: mockMovieEto };
     const expectedMovie = etoToMovie(movieEto);
 
-    httpClientSpy.get.and.returnValue(of(movieEto));
+    httpClientSpy.get.and.returnValue(of(movieResponse));
 
     movieService.getMovieDetails(mockMovieEto.imdb_id).subscribe((movie) => {
       expect(movie).toEqual(expectedMovie);
