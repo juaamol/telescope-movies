@@ -4,9 +4,9 @@ import {
   HttpTestingController,
 } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
-import { api } from '../../environments/environment';
+import { api } from '../../../../environments/environment';
 import { ApiAuthenticationInterceptor } from './api-authentication.interceptor';
-import { AppModule } from '../app.module';
+import { AppModule } from '../../../app.module';
 
 describe('ApiAuthenticationInterceptor', () => {
   let httpClient: HttpClient;
