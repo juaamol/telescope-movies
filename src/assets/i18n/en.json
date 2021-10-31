@@ -25,5 +25,8 @@
             "rating": "Rating",
             "popularity": "Popularity"
         }
+    },
+    "single-movie": {
+        "error": "An error has ocurred while loading the movie details. Please try again later."
     }
 }
