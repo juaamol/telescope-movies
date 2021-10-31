@@ -14,5 +14,16 @@
             "video": "Trailer of the movie \"{{title}}\"",
             "poster": "Poster of the movie \"{{title}}\""
         }
+    },
+    "movie-details": {
+        "aria": {
+            "description": "General description of the movie",
+            "rating": "Rating",
+            "other-info": "Other revelant information"
+        },
+        "tooltip": {
+            "rating": "Rating",
+            "popularity": "Popularity"
+        }
     }
 }
