@@ -9,6 +9,7 @@ const routes: Routes = [
         (m) => m.SingleMovieModule
       ),
   },
+  { path: 'movies-list/:genre', loadChildren: () => import('./movies-list/movies-list.module').then(m => m.MoviesListModule) },
 ];
 
 @NgModule({
