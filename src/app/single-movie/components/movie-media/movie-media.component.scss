@@ -1,0 +1,56 @@
+@use '../../../../assets/scss/variables.scss' as var;
+
+$image-size: 25%;
+$video-size: 75%;
+
+.video-container {
+  .video-responsive {
+    iframe {
+      border: none;
+    }
+  }
+
+  @media (max-width: var.$medium-break - 1) {
+    position: relative;
+
+    .video-responsive {
+      position: relative;
+      padding-bottom: 56.25%; /* 16/9 ratio */
+      padding-top: 30px; /* IE6 workaround*/
+      height: 0;
+      overflow: hidden;
+
+      iframe,
+      object,
+      embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    & > img {
+      width: 25vw;
+      position: absolute;
+      z-index: 3;
+      bottom: var.$mb-children;
+      left: var.$ml-children;
+    }
+  }
+
+  @media (min-width: var.$medium-break) {
+    display: grid;
+    grid-template-columns: minmax(auto, $video-size) minmax(auto, $image-size);
+    gap: var.$grid-gap;
+    justify-items: stretch;
+
+    .video-responsive {
+      iframe {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
