@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MovieDescriptionComponent } from './movie-description.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 describe('MovieDescriptionComponent', () => {
   let component: MovieDescriptionComponent;
@@ -8,6 +9,7 @@ describe('MovieDescriptionComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [MovieDescriptionComponent],
+      imports: [TranslateModule.forRoot()],
     }).compileComponents();
   });
 
