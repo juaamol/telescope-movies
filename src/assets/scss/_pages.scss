@@ -1,0 +1,18 @@
+@use './variables';
+
+.page {
+  @media (min-width: variables.$small-break) {
+    padding-left: variables.$pl-page-small;
+    padding-right: variables.$pr-page-small;
+  }
+
+  @media (min-width: variables.$medium-break) {
+    padding-left: variables.$pl-page-medium;
+    padding-right: variables.$pr-page-medium;
+  }
+
+  @media (min-width: variables.$big-break) {
+    padding-left: variables.$pl-page-big;
+    padding-right: variables.$pr-page-big;
+  }
+}
