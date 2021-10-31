@@ -1,9 +1,9 @@
 @use '../assets/scss/variables.scss' as var;
 
 .p-children {
-  margin: var.$pt-children var.$pr-children var.$pb-children var.$pl-children;
+  padding: var.$pt-children var.$pr-children var.$pb-children var.$pl-children;
 }
 
 .mb-0 {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
