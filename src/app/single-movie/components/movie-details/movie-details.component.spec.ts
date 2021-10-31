@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { SharedModule } from '../../../shared/shared.module';
 import { MovieDetailsComponent } from './movie-details.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 const mockMovie = {
@@ -33,7 +34,7 @@ describe('MovieDetailsComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [MovieDetailsComponent],
-      imports: [SharedModule],
+      imports: [SharedModule, TranslateModule.forRoot()],
     }).compileComponents();
   });
 

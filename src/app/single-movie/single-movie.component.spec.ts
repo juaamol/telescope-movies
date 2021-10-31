@@ -9,6 +9,7 @@ import { Observable, of, throwError } from 'rxjs';
 import { Movie } from './models/movie';
 import { MovieService } from './services/movie/movie.service';
 import { SingleMovieComponent } from './single-movie.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 const mockMovie = {
@@ -55,6 +56,7 @@ describe('SingleMovieComponent', () => {
           useClass: MockActivatedRoute,
         },
       ],
+      imports: [TranslateModule.forRoot()]
     }).compileComponents();
   });
 

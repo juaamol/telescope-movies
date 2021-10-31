@@ -1,7 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { MovieMediaComponent } from './movie-media.component';
+import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../../../shared/shared.module';
+import { MovieMediaComponent } from './movie-media.component';
+
 
 describe('MovieMediaComponent', () => {
   let component: MovieMediaComponent;
@@ -10,7 +11,10 @@ describe('MovieMediaComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [MovieMediaComponent],
-      imports: [SharedModule],
+      imports: [
+        SharedModule,
+        TranslateModule.forRoot()
+      ],
     }).compileComponents();
   });
 
