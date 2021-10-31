@@ -1,0 +1,53 @@
+<section *ngIf="movie">
+  <header>
+    <app-movie-header
+      [title]="movie.title"
+      [metadata]="movie.year + ' - ' + (movie.movieLength | minutesToHours)"
+    >
+    </app-movie-header>
+  </header>
+
+  <section [attr.aria-label]="'movie-details.aria.description' | translate">
+    <app-movie-media
+      [title]="movie.title"
+      [imageUrl]="movie.imageUrl"
+      [trailerUrl]="movie.trailer"
+    ></app-movie-media>
+
+    <mat-chip-list
+      class="d-flex mt-siblings mb-siblings ml-children mr-children"
+    >
+      <mat-chip *ngFor="let genre of movie.gen || []" class="genre">
+        {{ genre.genre }}
+      </mat-chip>
+    </mat-chip-list>
+
+    <p class="ml-children mr-children plot">
+      {{ movie.plot }}
+    </p>
+  </section>
+
+  <section
+    class="d-flex justify-evenly mt-siblings mb-blocks mt-blocks rating"
+    [attr.aria-label]="'movie-details.aria.rating' | translate"
+  >
+    <app-icon-label [label]="movie.rating + '/10'">
+      <mat-icon [matTooltip]="'movie-details.tooltip.rating' | translate">
+        star_rate
+      </mat-icon>
+    </app-icon-label>
+    <app-icon-label [label]="movie.popularity">
+      <mat-icon [matTooltip]="'movie-details.tooltip.popularity' | translate">
+        local_fire_department
+      </mat-icon>
+    </app-icon-label>
+  </section>
+
+  <section [attr.aria-label]="'movie-details.aria.other-info' | translate">
+    <app-movie-description
+      [description]="movie.description"
+      [keywords]="movie.keywords || []"
+    >
+    </app-movie-description>
+  </section>
+</section>

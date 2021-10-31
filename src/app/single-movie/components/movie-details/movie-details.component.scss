@@ -1,0 +1,9 @@
+@use '../../../../assets/scss/variables.scss' as var;
+
+.ml-children {
+  margin-left: var.$ml-children;
+}
+
+.mr-children {
+  margin-right: var.$mr-children;
+}
