@@ -1,0 +1,13 @@
+<div class="video-container">
+  <div class="video-responsive">
+    <iframe
+      [src]="trailerUrl | safe"
+      class="video"
+      [attr.aria-label]="'movie-media.aria.video' | translate: { title: title }"
+    ></iframe>
+  </div>
+  <img
+    [src]="imageUrl | safe"
+    [attr.alt]="'movie-media.aria.poster' | translate: { title: title }"
+  />
+</div>

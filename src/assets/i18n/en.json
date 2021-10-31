@@ -8,5 +8,11 @@
         "aria": {
             "description": "Description of the movie"
         }
+    },
+    "movie-media": {
+        "aria": {
+            "video": "Trailer of the movie \"{{title}}\"",
+            "poster": "Poster of the movie \"{{title}}\""
+        }
     }
 }
