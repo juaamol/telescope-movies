@@ -1,5 +1,12 @@
 {
     "app": {
         "title": "Telescope movies"
+    },
+    "movie-description": {
+        "title": "Detailed description",
+        "keywords": "Keywords",
+        "aria": {
+            "description": "Description of the movie"
+        }
     }
 }
