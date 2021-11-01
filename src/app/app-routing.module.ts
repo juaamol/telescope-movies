@@ -10,6 +10,7 @@ const routes: Routes = [
       ),
   },
   { path: 'movies-list/:genre', loadChildren: () => import('./movies-list/movies-list.module').then(m => m.MoviesListModule) },
+  { path: 'genres', loadChildren: () => import('./genres/genres.module').then(m => m.GenresModule) },
 ];
 
 @NgModule({
