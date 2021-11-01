@@ -1,4 +1,6 @@
 <mat-toolbar>
-  {{ "app.title" | translate }}
+  <span role="link" [routerLink]="'/genres'" class="link">
+    {{ "app.title" | translate }}
+  </span>
 </mat-toolbar>
 <router-outlet></router-outlet>
