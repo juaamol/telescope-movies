@@ -10,6 +10,7 @@ $width-card: 12ch;
 
   .genre {
     padding: $pt-card $pr-card $pb-card $pl-card;
+    cursor: pointer;
     width: $width-card;
     text-align: center;
   }
