@@ -1,10 +1,10 @@
 <section class="movies-list-page page">
-  <header>
+  <header class="ml-children">
     <h1>
       {{ "movies-list.choose-a-movie" | translate }}
     </h1>
   </header>
-  <div class="movies-container mat-elevation-z8">
+  <div class="movies-container mat-elevation-z8 ml-children">
     <div class="movies-loading-shade" *ngIf="isLoading">
       <mat-spinner *ngIf="isLoading"></mat-spinner>
     </div>
