@@ -28,5 +28,11 @@
     },
     "single-movie": {
         "error": "An error has ocurred while loading the movie details. Please try again later."
+    },
+    "movies-list": {
+        "choose-a-movie": "Choose a movie",
+        "error": "An error has ocurred while loading the movies. Please try again later.",
+        "name": "Name",
+        "select-page": "Select page of movie search results"
     }
 }

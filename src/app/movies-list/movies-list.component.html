@@ -1,1 +1,41 @@
-<p>movies-list works!</p>
+<section class="movies-list-page page">
+  <header>
+    <h1>
+      {{ "movies-list.choose-a-movie" | translate }}
+    </h1>
+  </header>
+  <div class="movies-container mat-elevation-z8">
+    <div class="movies-loading-shade" *ngIf="isLoading">
+      <mat-spinner *ngIf="isLoading"></mat-spinner>
+    </div>
+
+    <div class="movies-table-container">
+      <table mat-table [dataSource]="movies" class="movies-table">
+        <ng-container matColumnDef="title">
+          <th mat-header-cell *matHeaderCellDef>
+            {{ "movies-list.name" | translate }}
+          </th>
+          <td mat-cell *matCellDef="let row">{{ row.title }}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+    </div>
+
+    <mat-paginator
+      [length]="resultsLength"
+      [pageSize]="pageSize"
+      [attr.aria-label]="'movies-list.aria.select-page' | translate"
+    ></mat-paginator>
+  </div>
+  <ng-template #error>
+    <div
+      class="d-flex justify-center mt-siblings error"
+      role="alert"
+      aria-live="polite"
+    >
+      {{ "movies-list.error" | translate }}
+    </div>
+  </ng-template>
+</section>
