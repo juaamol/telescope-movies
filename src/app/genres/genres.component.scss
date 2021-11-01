@@ -1,0 +1,16 @@
+$pt-card: 2rem;
+$pr-card: 1rem;
+$pb-card: 2rem;
+$pl-card: 1rem;
+$width-card: 12ch;
+
+.genres {
+  padding-left: 0;
+  list-style: none;
+
+  .genre {
+    padding: $pt-card $pr-card $pb-card $pl-card;
+    width: $width-card;
+    text-align: center;
+  }
+}

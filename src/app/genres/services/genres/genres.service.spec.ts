@@ -4,7 +4,7 @@ import { of } from 'rxjs';
 
 import { GenresService } from './genres.service';
 
-fdescribe('GenresService', () => {
+describe('GenresService', () => {
   let httpClientSpy: { get: jasmine.Spy };
   let genresService: GenresService;
 

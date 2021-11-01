@@ -1,1 +1,27 @@
-<p>genres works!</p>
+<section class="page">
+  <header class="ml-children">
+    <h1>
+      {{ "genres.choose-a-genre" | translate }}
+    </h1>
+  </header>
+  <div *ngIf="isLoading" class="d-flex justify-center">
+    <mat-spinner [diameter]="50"></mat-spinner>
+  </div>
+  <ul class="d-flex flex-wrap genres ml-children">
+    <li
+      *ngFor="let genre of genres"
+      class="mr-siblings mb-siblings border-rounded genre"
+      [routerLink]="'/movies-list/' + genre"
+    >
+      {{ genre }}
+    </li>
+  </ul>
+  <div
+    *ngIf="hasError"
+    class="d-flex justify-center error"
+    role="alert"
+    aria-live="polite"
+  >
+    {{ "genres.error" | translate }}
+  </div>
+</section>
