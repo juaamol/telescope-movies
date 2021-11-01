@@ -1,0 +1,42 @@
+{
+    "app": {
+        "title": "Telescope movies"
+    },
+    "movie-description": {
+        "title": "Detailed description",
+        "keywords": "Keywords",
+        "aria": {
+            "description": "Description of the movie"
+        }
+    },
+    "movie-media": {
+        "aria": {
+            "video": "Trailer of the movie \"{{title}}\"",
+            "poster": "Poster of the movie \"{{title}}\""
+        }
+    },
+    "movie-details": {
+        "aria": {
+            "description": "General description of the movie",
+            "rating": "Rating",
+            "other-info": "Other revelant information"
+        },
+        "tooltip": {
+            "rating": "Rating",
+            "popularity": "Popularity"
+        }
+    },
+    "single-movie": {
+        "error": "An error has ocurred while loading the movie details. Please try again later."
+    },
+    "movies-list": {
+        "choose-a-movie": "Choose a movie",
+        "error": "An error has ocurred while loading the movies. Please try again later.",
+        "name": "Name",
+        "select-page": "Select page of movie search results"
+    },
+    "genres": {
+        "choose-a-genre": "Choose your favorite movie genre",
+        "error": "An error has ocurred while loading the genres. Please try again later."
+    }
+}

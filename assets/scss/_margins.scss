@@ -1,0 +1,37 @@
+@use "./variables";
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mt-siblings {
+  margin-top: variables.$mt-siblings;
+}
+
+.mb-siblings {
+  margin-bottom: variables.$mb-siblings;
+}
+
+.mr-siblings {
+  margin-right: variables.$mr-siblings;
+}
+
+.ml-children {
+  margin: variables.$ml-children;
+}
+
+.mr-children {
+  margin: variables.$mr-children;
+}
+
+.mt-blocks {
+  margin-top: variables.$mt-blocks;
+}
+
+.mb-blocks {
+  margin-bottom: variables.$mb-blocks;
+}
+
+.ml-auto {
+  margin-left: auto;
+}

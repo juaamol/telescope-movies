@@ -1,0 +1,20 @@
+@use '~@angular/material' as mat;
+@use '../../app/single-movie/components/movie-header/movie-header-theme' as header;
+@use '../../app/genres/genres-theme' as genres;
+@use '../../style-theme' as style;
+
+@include mat.core();
+
+$dark-primary: mat.define-palette(mat.$pink-palette);
+$dark-accent: mat.define-palette(mat.$blue-gray-palette);
+$dark-theme: mat.define-dark-theme((
+ color: (
+   primary: $dark-primary,
+   accent: $dark-accent,
+ )
+));
+
+@include mat.all-component-themes($dark-theme);
+@include header.theme($dark-theme);
+@include genres.theme($dark-theme);
+@include style.theme($dark-theme);

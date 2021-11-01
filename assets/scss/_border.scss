@@ -1,0 +1,5 @@
+@use './variables.scss' as var;
+
+.border-rounded {
+  border-radius: var.$border-rounded;
+}
