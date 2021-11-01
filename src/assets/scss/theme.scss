@@ -1,5 +1,6 @@
 @use '~@angular/material' as mat;
 @use '../../app/single-movie/components/movie-header/movie-header-theme' as header;
+@use '../../app/genres/genres-theme' as genres;
 @use '../../style-theme' as style;
 
 @include mat.core();
@@ -15,4 +16,5 @@ $dark-theme: mat.define-dark-theme((
 
 @include mat.all-component-themes($dark-theme);
 @include header.theme($dark-theme);
+@include genres.theme($dark-theme);
 @include style.theme($dark-theme);

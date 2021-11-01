@@ -34,5 +34,9 @@
         "error": "An error has ocurred while loading the movies. Please try again later.",
         "name": "Name",
         "select-page": "Select page of movie search results"
+    },
+    "genres": {
+        "choose-a-genre": "Choose your favorite movie genre",
+        "error": "An error has ocurred while loading the genres. Please try again later."
     }
 }
