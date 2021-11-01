@@ -15,7 +15,14 @@
           <th mat-header-cell *matHeaderCellDef>
             {{ "movies-list.name" | translate }}
           </th>
-          <td mat-cell *matCellDef="let row">{{ row.title }}</td>
+          <td
+            mat-cell
+            *matCellDef="let row"
+            [routerLink]="'/single-movie/' + row.imdbId"
+            class="link"
+          >
+            {{ row.title }}
+          </td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
