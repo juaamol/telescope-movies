@@ -1,7 +1,7 @@
 import { API_KEY } from './api-key';
 
 export const environment = {
-  production: true,
+  production: false,
 };
 
 export const api = {
