@@ -4,6 +4,14 @@ Gets a list of movie genres, you can select them to get information of movies.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.12.
 
+## Prerrequisites
+
+You need a file `environments/api-key.ts` with the following content:
+
+```ts
+export const API_KEY = 'here-your-api-key';
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
